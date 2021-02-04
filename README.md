@@ -1,3 +1,4 @@
 # HTML_firstMango
-HTML excercise page
+HTML excercise page.
+
 This is my first HTML + CSS excersice from school.
