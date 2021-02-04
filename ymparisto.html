@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+<title>Mango the Bearded Dragon</title>
+</head>
+<body>
+<header>Mango<br>Parta-agama</header>
+
+<!--Tässä on nagivointinappulat-->
+<div class="topnav content">
+    <a class="active" href="index.html">Etusivu</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="ruokinta.html">Ruokinta</a>
+    <a href="ymparisto.html">Ympäristö</a>
+</div>
+<!--Tässä on tekstiartikkeli-->
+<article class="content">
+    <p>Interaktiivinen kuva Mangon terraariosta</p>
+
+<img src="mangotankki.jpg" alt="Terraario" usemap="#mangotankki" width="864" height="648" class="center">
+
+<!--Tässä on mapattu kuva-->
+    <map name="mangotankki">
+        <area shape="rect" coords="23,59,858,117" onclick="myFunction1()">
+        <area shape="rect" coords="2,240,57,331" onclick="myFunction2()">
+        <area shape="poly" coords="167,225,91,357,141,378,210,368,270,340,329,288,329,272,291,281,230,263,172,223" onclick="myFunction3()">
+        <area shape="circle" coords="350,405,20" onclick="myFunction4()">
+        <area shape="poly" coords="823,182,791,408,497,405" onclick="myFunction5()">
+        <area shape="poly" coords="248,360,305,422,328,417,321,402,342,384,381,394,417,393,461,418,420,372,432,343,399,331.260,348" onclick="myFunction6()">
+        <area shape="poly" coords="137,394,58,500,855,507,781,411,572,413,475,354,447,354,495,454,243,450,239,372" onclick="myFunction7()">
+    </map>
+<!--Toiminnot eri kohdista painaessa-->
+    <script>
+        function myFunction1() {
+            alert("UVB-lamppu tarjoaa parta-agamalle päivittäisen UV-annoksen. Lamppu tulee vaihtaa 6kk-12kk välein, jotta UVB-taso pysyy hyvänä.");
+        }
+        function myFunction2() {
+            alert("Lämpölamppu tarjoaa parta-agamalle lämmittelypaikan. Lämpötilan tulee olla noin +40 astetta lämmittelypaikalla. Lämmittelypaikan voi tarjota joko lämpölampulla tai lämpökivellä. Lämpölamppu luo luonnonmukaisen tunnelman, kun lämpö tulee ylhäältä kuten auringonkin lämpö. Lämpökiven lämpö tulee alhaalta päin eikä vie terraarion ulkopuolelta tilaa kuten lämpölamppu.")
+        }
+        function myFunction3() {
+            alert("Parta-agama tarvitsee muutamia kiipeilypaikkoja, mutta ne eivät saa olla liian korkeita jotta parta-agama ei putoa niistä ja loukkaa itseään.")
+        }
+        function myFunction4() {
+            alert("Parta-agaman ruokavalioon kuuluu hyönteiset ja kasvikset. Nuoren yksilön ruokavalio koostuu 10% kasviksista ja 90% hyönteisistä. Aikuisen ruokavalio koostuu 50% kasviksista ja 50% hyönteisistä.")
+        }
+        function myFunction5() {
+            alert("Parta-agama tarvitsee piilopaikkoja. Terraarion viileällä puolella ollessaan ne tarjoavat rauhoittumis- ja nukkumapaikan.")
+        }
+        function myFunction6() {
+            alert("Terraarion voi sisustaa miten haluaa, mutta mitään vaarallista ei saa laittaa terraarioon. Parta-agama maistelee kaikkea, joten oikeita kasveja ei mieluusti saisi laittaa samaan tilaan. Jos kuitenkin niin haluaa tehdä, tulee olla varma kasvien myrkyttömyydestä.")
+        }
+        function myFunction7() {
+            alert("Terraarion pohjaksi voi laittaa hiekkaa, hiekkamaton, laattoja, sanomalehteä ym. Nuorelle parta-agamalle olisi kuitenkin hyvä olla esim. hiekkamatto, jotta se ei söisi irtonaista hiekkaa joka helposti tukkii suolen. Aikuistakin yksilöä tulee tarkkailla, jottei se syö irtonaista hiekkaa ylettömiä määriä, jos pohjana on irtohiekka.")
+        }
+    </script>
+
+</article>
+
+</body>
+</html>
