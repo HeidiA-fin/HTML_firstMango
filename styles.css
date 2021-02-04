@@ -1,0 +1,164 @@
+/*Yleinen body*/
+body {
+    margin: 0px;
+    font-family: 'chilanka';
+    background-color: rgb(255, 229, 182);
+}
+/*Headeri, muista poistaa lopullisesta versiosta borderit!!!*/
+header {
+    font-family: 'cabin sketch';font-size: 80px;
+    color:black;
+    text-align: center;
+    background-image: url(sand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    /*border: solid black 2px;*/
+}
+/*Keskitetty määrittely*/
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: rgb(255, 229, 182);
+    padding: 10px;
+}
+/*Navigointinappulat*/
+.topnav {
+    overflow: hidden;
+    background-color:rgb(255, 229, 182);
+   /* border: solid black 2px;*/
+}
+/*Navigointinappulat*/
+.topnav a {
+    float: left;
+    color: rgb(247, 152, 9);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*Navigointinappulat*/
+.topnav a:hover {
+    background-color: brown;
+    color: black;
+}
+/*Divin määrittely*/
+div {
+    padding-left: 16px;
+}
+/*Artikkelin määrittely*/
+article {
+  /*  border: solid black 2px;*/
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 16px;
+}
+/*Ympäristö-sivulla olevan kuvan keskitys*/
+.center {
+    display: block;
+    margin-left: -145px;
+    margin-right: auto;
+}
+/*Tietoa-sivun piikikäs-kuvan määrittely*/
+.container {
+    position: absolute;
+    width: 20%;
+    margin-left: 700px;
+}
+/*Tietoa-sivun nukkuva-kuvan määrittely*/
+.container1 {
+    position: absolute;
+    width: 20%;
+    margin-left: 200px;
+}
+/*Tietoa-sivun lattia-kuvan määrittely*/
+.container2 {
+    position: absolute;
+    width: 35%;
+    margin-left: 1200px;
+}
+/*Tietoa-sivun kuvan määrittelyt*/
+.image {
+    opacity: 1;
+    display: block;
+    width: 10%;
+    height: 10%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+/*Tietoa-sivun kuvan määrittelyt*/
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*Tietoa-sivun lattia-kuvan määrittely*/
+.container2:hover .image {
+    opacity: 0,3;
+}
+/*Tietoa-sivun lattia-kuvan määrittely*/
+.container2:hover .middle {
+    opacity: 1;
+}
+
+/*Tietoa-sivun nukkuva-kuvan määrittely*/
+.container1:hover .image {
+    opacity: 0,3;
+}
+/*Tietoa-sivun nukkuva-kuvan määrittely*/
+.container1:hover .middle {
+    opacity: 1;
+}
+/*Tietoa-sivun kuvan määrittelyt*/
+.container:hover .image {
+    opacity: 0,3;
+}
+/*Tietoa-sivun kuvan määrittelyt*/
+.container:hover .middle {
+    opacity: 1;
+}
+/*Tietoa-sivun kuvan määrittelyt*/
+.text {
+    background-color: rgb(255, 229, 182);
+    color: black;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+/*Taulukon määrittely*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black
+}
+/*Taulukon ruudukoiden määrittely*/
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+/*Taulukon tekstin keskitykset*/
+th:first-child, td:first-child {
+    text-align: left;
+}
+/*Taulukon joka toisen väri*/
+tr:nth-child(even) {
+    background-color: burlywood;
+}
+/*Sopii-ruutu*/
+.fa-check {
+    color: green;
+}
+/*Ei sovi-ruutu*/
+.fa-remove {
+    color: red;
+}
+/*Etusivun kuva*/
+img {
+    margin-left: -100px;
+}
